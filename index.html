@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="utf-8">
-<title>Login</title>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <h2>Đăng nhập</h2>
-<input id="emailEl" placeholder="Email"><br>
-<input id="passwordEl" type="password" placeholder="Password"><br>
-<button onclick="login()">Login</button>
 
-<p><a href="register.html">Đăng ký</a></p>
+<form id="loginForm">
+  <input type="email" id="email" placeholder="Email" required><br>
+  <input type="password" id="password" placeholder="Mật khẩu" required><br>
+  <button type="submit">Đăng nhập</button>
+</form>
 
-<script src="crypto.js"></script>
-<script src="auth.js"></script>
+<p id="error" style="color:red;"></p>
+
+<script src="js/supabase.js"></script>
+<script src="js/auth.js"></script>
 </body>
 </html>
