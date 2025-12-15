@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="utf-8">
-<title>Dashboard</title>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
 </head>
 <body>
 
-<h2 id="welcome"></h2>
-<button onclick="logout()">Logout</button>
+<h2>Dashboard</h2>
+<p id="info"></p>
+<button id="logout">Đăng xuất</button>
 
-<script src="auth.js"></script>
-<script>
-    const user = requireLogin();
-    document.getElementById("welcome").innerText =
-        `Xin chào ${user.nickname} (${user.role})`;
-</script>
+<script src="js/dashboard.js"></script>
 </body>
 </html>
