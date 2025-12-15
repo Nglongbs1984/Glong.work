@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dashboard</title>
+</head>
+<body>
+
+<h2 id="welcome"></h2>
+<button onclick="logout()">Logout</button>
+
+<script src="auth.js"></script>
+<script>
+    const user = requireLogin();
+    document.getElementById("welcome").innerText =
+        `Xin chào ${user.nickname} (${user.role})`;
+</script>
+</body>
+</html>
